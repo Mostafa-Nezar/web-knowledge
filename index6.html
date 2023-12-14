@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #9B9893;
+        background-color: #9A9792;
+        color: white;
+        font-size: 30px;
+        width: 98%;
+        margin: 20px auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        grid-area: header;
+    }
+    header p{
+        margin-top: 0px;
+        font-size: 20px;
+        
+    }
+    .page{
+        display: grid;
+        background-color: #3C2117;
+        padding-top:5px;
+        padding-bottom: 5px;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: 10% 10% 70% 10%;
+        grid-template-areas:"header header header header header header header header header header " "nav nav nav nav nav nav nav nav nav nav" "article article article article article article article article aside aside" "footer footer footer footer footer footer footer footer footer footer ";
+        column-gap: 1px;
+        overflow: hidden;
+
+    }
+    nav{
+        display: flex;
+        background-color: #ddd;
+        justify-content: left;
+        width: 98%;
+        margin: 20px auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        grid-area: nav;
+    }
+    .x{
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .x:hover{
+        color: black;
+    }
+    article{
+        background-color: white;
+        width: 97.5%;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        grid-area: article;
+    }
+    aside{
+        grid-area: aside;
+        background-color: white;
+        margin-left: -5%;
+        width: 100%;
+        color: #CA8792;
+        padding-right: 0px;
+        padding-top: 10px;
+
+    }
+    footer{
+        grid-area: footer;
+    }
+    section{
+        display: flex;
+    }
+    h3 ~ span{
+        color:#CA8792 ;
+    }
+    section figure{
+        border:  1px solid;
+        padding: 5px;
+    }
+    footer{
+        color: white;
+        background-color:#9A9792;
+        width: 98%;
+        margin: 20px auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+</style>
+<body>
+    <div class="page">
+        <header>
+            <figure><img src="WhatsApp Image 2023-10-27 at 15.34.02_5fd9b5ce.jpg" align="left" style="margin-right: 20px;" alt="not found" height="50px">
+                <div>Yoko`s Kitchen</div>
+                <p>Japanese Cooking Classes</p>
+            </figure>
+        </header>
+        <nav>
+        <a href="#footer" class="x">home</a>            
+        <a href="#" class="x">classes</a>            
+        <a href="#" class="x">catering</a>            
+        <a href="#" class="x">about</a>            
+        <a href="#" class="x">contact</a>            
+        </nav>
+       <article>
+       <section><figure>
+        <img src="WhatsApp Image 2023-10-27 at 15.34.02_89eb223a2 - Copy.jpg" alt="not found" width="100%">
+        <p>Bok Choi</p>
+       </figure>
+       <div>
+        <h3>Japanese Vegetarian</h3>
+        <span>Five Weeks Course In London</span>
+        <p>A five week introduction to traditional Japanese Vegetarian meals,<br> teaching you a selection of rice and noodle dishes</p>
+       </div>
+    </section> 
+    <section><figure>
+        <img src="WhatsApp Image 2023-10-27 at 15.34.02_89eb223a3.jpg" alt="not found" width="100%">
+        <p>Teriyaki Sauce</p>
+       </figure>
+       <div>
+        <h3>Sauses Masterclass</h3>
+        <span>One day workshop</span>
+        <p>An intensive one-day course looking at 
+            how to create the most delicious sauces <br>
+             for use in a range of Japanese cookery
+        </p>
+       </div>
+    </section> 
+       </article>
+        <aside>
+            <h3 style="margin-left: 20px;">Popular Recipes</h3>
+        <p style="margin-left: 20px;">Yakitori (grilled chicken)</p>
+        <hr style="width: 60%; margin-left: 20px; height: 1px; border-color: white;">
+        <p style="margin-left: 20px;">Tsukune (minced chicken patties)</p>
+        <hr style="width: 80%; margin-left: 20px; height: 1px; border-color: white;">
+        <p style="margin-left: 20px;">Okonomiyaki(savory pancakes)</p>
+        <hr style="width: 80%; margin-left: 20px; height: 1px; border-color: white;">
+        <p style="margin-left: 20px;">Mizutaki(chicken stew)</p>
+        <hr style="width: 80%; margin-left: 20px; height: 1px; border-color: white;">
+        <h2 style="margin: 20px;">Contact</h2>
+        <p style="margin: 20px; color: black;">Yoko`s Kitchen <br>
+            <sub>27</sub> Redchurch Street <br>
+            Shoreditch <br>
+            London E <sub>2 7</sub>DP
+        </p>
+        </aside>
+        <footer id="footer">&#169; 2011 Yoko`s Kitchen</footer>
+    </div>
+</body>
+</html>

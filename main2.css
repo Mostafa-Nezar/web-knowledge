@@ -1,0 +1,91 @@
+body{
+    background-image: url(./pattern.png);
+    height: 1000px;
+    background-attachment: fixed;
+}
+.home{
+    display:inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.home:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.x{
+padding: -10px;
+vertical-align: middle;
+}
+table{
+    width: 1000px;
+    border: 2px solid red;
+    text-align: center;
+    margin: 0 auto;
+}
+table,th,td{
+    border: 2px solid ;
+    border-collapse: collapse;
+}
+td:hover{
+    background-color:aquamarine;
+}
+td{
+    height: 100px;
+    /* vertical-align:bottom; */
+}
+th,td{
+    vertical-align: middle;
+}
+.table{
+    overflow: auto;
+}
+.y{
+    width: 800px;
+    height: 500px;
+    padding-left: 100px;
+}
+.h1{
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 40px;
+}
+.mail{
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: green;
+}
+.mail:visited{
+    color: yellowgreen;
+}
+.mail:hover{
+    color: orange;
+    text-decoration: underline;
+
+}
+.par{
+    color:brown;
+    display: inline;
+}
+.last{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ol{
+line-height: 30px;
+color: red;
+font-size: large;
+font-family:'Courier New', Courier, monospace'Courier New', Courier, monospace;
+}
+
+.xd{
+    padding-left:300px ;
+
+}
+.lastp{
+    font-size: 20px;
+}
+.beth{
+    font-size: 23px;
+}

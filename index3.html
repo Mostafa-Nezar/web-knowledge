@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+.head{
+    display: grid;
+    justify-content: center;
+    align-content:flex-end;
+    text-align: center;
+    height: 50px;
+    margin-bottom:30px ;
+}
+.flex-child{
+    display: flex;
+    margin: 5px;
+    height: 75%;
+    flex-grow: 1;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;  
+}
+.flex-parent{
+    display: flex;
+    max-width: 600px;
+    height: 50px;
+    margin: auto;
+    justify-content:space-evenly;
+}
+.flex-child-special{
+    display: flex;
+    margin: 5px;
+    height: 75%;
+    flex-grow: 1;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+     color: white;
+}
+.P{
+    font-size: 10px;
+    color: gray;
+}
+.head h3{
+    text-decoration: line-through;
+}
+.grid-parent{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(4,auto-fill);
+    max-width: 900px;
+    justify-content: space-evenly;
+}
+.grid-child{
+    display: grid;
+    margin: 10px;
+    box-shadow:5px 5px 10px gray;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-child div{
+    width: 80%;
+    border-radius: 5px;
+    margin: 20px auto;
+    margin-right: 10px;
+    align-self: flex-start;
+    position:relative;
+
+}
+.grid-child div img{
+    width: 80%;
+    border-radius: 5px;
+    margin: 2px auto;
+    margin-bottom: -10px;
+    align-self: flex-start;
+}
+
+.grid-child div div img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%,-100%);
+} 
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h3 style="margin-bottom: -5px;">OUR SHOP</h3>
+        <p class="P">WELCOME TO THE WOLRED OF WOOD</p>
+     </div>
+        <div class="flex-parent">
+            <div class="flex-child-special">All</div>
+            <div class="flex-child">Beds</div>
+            <div class="flex-child" style="flex-grow: 1.2;">NightStand</div>
+            <div class="flex-child">Chairs</div>
+            <div class="flex-child" style="flex-shrink: 3;">Sofa</div>
+        </div>
+        <br>
+        <br>
+        <div class="grid-parent">
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>Sofa</p>
+                    <span>100$</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+            <div class="grid-child">
+                <div>
+                    <img src="./images.jpeg" alt="">
+                    <p>x</p>
+                    <span>xyz</span>
+                    <div class="mark"><img src="./images.jpeg" alt=""></div>
+                    </div> 
+            </div>
+        </div> 
+    
+</body>
+</html>

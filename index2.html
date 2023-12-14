@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    display: inline-flex;
+    margin: 10px;
+    background-color: black;
+    padding: 15px;    
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    width: 40px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+a:hover{
+    background-color: red;
+    box-shadow: 20px 20px 0 black;
+    color: white;
+    border-radius: 25px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 3s;
+    transition-timing-function:ease;
+    /* transition-delay:2s; */
+}
+a:visited{
+    color: white;
+}
+
+ul{
+    list-style: none;
+   overflow: scroll;
+   margin-left: 200px;
+
+
+}
+.page{
+    background-color: #eee;
+    height: 100vh;
+    display: grid;
+grid-template-columns: repeat(10,1fr);
+grid-template-rows: 10% 80% 10%;
+grid-template-areas: "logo logo nav nav nav nav nav nav nav nav" "sidex cont cont cont cont cont cont side side side" "foot foot foot foot foot foot foot foot foot foot ";
+    gap: 2px;
+}
+
+
+h3{
+    display: grid;
+    grid-area: logo;
+    background-color: red;
+    color: white;
+    position:sticky;
+    top: 0px;
+    border-top-left-radius: 25px;
+    text-align: center;
+    align-content: center;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+    justify-content: right;
+    border-top-right-radius:25px ;
+    overflow: hidden;
+
+
+}
+section{
+    padding: 100px;
+    grid-area: cont;
+    background-color: yellowgreen;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+aside{
+    grid-area: side;
+    background-color: green;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+footer{
+    grid-area: foot;
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-bottom-right-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    position: sticky;
+}
+.side2{
+    grid-area: sidex;
+    background-color: green;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="page" style="border-radius:50px;">
+        <h3>logo</h3>
+        <nav>
+            <ul><a href="#x">home</a>
+            <a>about</a>
+            <a>services</a>
+            <a>contact</a>
+            </ul>
+        </nav>
+        <section class="content"><img src="./images.jpeg" alt="" style="background-attachment: fixed; display: inline-flex;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, rem quam? Vitae quasi molestiae perspiciatis fuga aspernatur sapiente tenetur cupiditate cum, repellendus quibusdam, mollitia eaque et officia laboriosam amet distinctio.</p></section>
+        <aside>side bar</aside>
+        <aside class="side2">side bar</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bethany cake shop</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="./bethanylogo.png">
+    <style>
+        a{
+        text-decoration: none;
+        }
+        a:visited{
+            color: red;
+        }
+        .page{
+            display: grid;
+            height: 120vh;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: 8% 90% 2%;
+            grid-template-areas: "nav nav nav nav nav nav nav nav nav nav" "side side art art art art art art art art " "foot foot foot foot foot foot foot foot foot foot ";
+           gap: 2px;
+        }
+    .navigationbar{
+        display: flex;
+        background-color: black;
+        grid-area: nav;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+        font-size: 20px;
+        top: 0px;
+        position: sticky;
+    }
+    .sidebar{
+        display: grid;
+        justify-content:center;
+        align-content: start;
+        grid-area: side;
+        background-color: red;
+        
+    }
+
+    .article{
+        grid-area: art;
+        padding: 100px;
+        padding-top: 0px;
+        padding-left: 12%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        }
+    .sidebar div img{
+        margin: 5%;
+        width: 90%;
+        padding-left:10px;
+
+    }
+
+    
+    footer{
+        grid-area: foot;
+        background-color: aquamarine;
+    }
+   
+    h2{
+        font-family: 'Pacifico', cursive;
+        color:purple;
+    }
+    input[type='text']{
+        border-left: 5px solid greenyellow;
+        border-right: 5px solid greenyellow;
+    }
+    input[type='password']{
+        border-left: 5px solid greenyellow;
+        border-right: 5px solid greenyellow;
+    }
+    input[type='optgroup']{
+        border-left: 5px solid greenyellow;
+    }
+    button{
+        border-radius: 20px;
+        background-color: rgb(178, 235, 64);
+        width: 100px;
+        height: 30px;
+    }
+    option{
+        font-size: 15px;
+    }
+    .navigationbar *{
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    body{
+    background-image: url(./pattern.png);
+    margin: 0px;
+}
+
+.mx{
+    margin: 5%;
+    width: 90%;
+}
+@media (min-width:0px){
+    .page{
+        height: 170vh;
+        grid-template-rows: 4% 95% 2%;
+    }
+    .mx{
+        width: 50%;
+    }
+    .sidebar{
+        background-color: aqua;
+       } 
+       .sidebar div img{
+        margin-left: -5px;
+       }
+       .navigationbar .logo .im{
+       height: 50px;
+       }
+       .navigationbar a{
+        margin: 20px;
+       }
+       .navigationbar{
+        display: flex;
+        justify-content: center;
+       }
+       .article img{
+        width: 300px;
+        height: 200px;
+       }
+       
+     
+}
+@media (min-width:600px){
+    .sidebar{
+        background-color: yellow;
+    }
+    .navigationbar .logo .im{
+        height: 60px;
+                           }
+    .mx{
+        width: 50%;
+    }
+    .navigationbar .logo img{
+       height: 50%;
+       }
+       .page{
+        height: 145vh;
+        grid-template-rows: 8% 90% 2%;
+    }
+}
+@media (min-width:800px){
+    .sidebar{
+        background-color: red;
+    }
+    .page{
+        height: 125vh;
+        grid-template-rows: 8% 90% 2%;
+    }
+    .navigationbar .logo img{
+       height: 20px;
+       }
+       .navigationbar .logo .im{
+        height: 60px;
+                           }
+    @media (min-width:1000px){
+        .sidebar div img{
+         margin-left: 0.8%;
+       }
+    }
+}
+</style>
+</head>
+<body>
+    <div class="page">
+    <div class="navigationbar">
+        <div class="logo">
+        <img src="./bethanylogo.png" class="imge" alt="" style="padding: 5px; margin: 10px; width: 15%; height: 15%;">
+        <img class="im" src="./pie.png" alt="" width="15%" style="margin: 10px; margin-bottom: 3%;"  >
+
+        </div>
+        <a href="./index2.html">Home</a>
+        <a href="./index3.html">All Cakes</a>
+    </div>
+    <div class="sidebar">
+        <div class="sidecontent">
+            <img src="./bethanylogo.png" alt=""  >
+        <form action="">
+            <input class="mx" type="" placeholder="Search Our Store" style="margin-left: 20%;">
+        </form>
+        </div>
+        </div>
+    <div class="article">
+        <br>
+        <h2>Welcome To Our Cake Shop</h2>
+        <br>
+        <img src="./blueberrycheesecakesmall.jpg" alt="" width="60%" height="40%">
+        <br>
+        <br>
+        <h3>Our History</h3>     
+        <p>For many years <strong>bethany</strong>has been baking the most delicious pies at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world fell in love with the soft cakes, heavenly cheese cakes, spicy apple pies... The store became a success in no time. In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building. After receiving many requests, it became clear that our next step was making it possible to order pies from the comfort of your own home and from anywhere in the world. You are now looking at the result of this: our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like it! Bethany is famous for using only the best ingredients. This way, we can make sure that our pies are absolutely the best.</p>
+
+        <h2>Enter Your Information</h2>
+        <form action="">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="">Name</label></td>
+                        <td><input type="text" placeholder="Enter Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Pass</label></td>
+                        <td><input type="password" placeholder="Enter Your password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Select City</label></td>
+                        <td><select name="city" id="">
+                            <optgroup label="egypt">
+                                <option value="">cairo</option>
+                                <option value="">ismailia</option>
+                                <optgroup label="saudia">
+                                    <option value="">makka</option>
+                                    <option value="">madina</option>
+                                    <option value="jaddah">jaddah</option>
+                                </optgroup>
+                            </optgroup>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button>Submit</button></td>
+                    </tr>
+                </tbody>
+            </table>           
+        </form>
+</div>
+    <footer>x</footer>
+</div>
+
+</body>
+</html>
