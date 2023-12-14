@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />  
+    </head>
+     <title>bondi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bondi.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;800&family=Open+Sans:ital@1&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: var(--dark-color);
+            color: white;
+        }
+       table *{
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        input{
+        border: none;
+        border-bottom: solid 1px white;
+        color: white;
+        font-weight: normal;
+        }
+         input:focus{
+            outline: none;
+        }
+        input::placeholder{
+            color: white;
+            opacity: 0.2;
+            font-size: 13px;
+        }
+             input{
+            background-color:var(--dark-color);
+            }
+
+    </style>
+    <div>
+        
+    <body>
+        <div class="text-center p-2" style="background-color: var(--red-color);">
+            <div class="main-title mt-5 mb-5 position-relative">
+                <img class="mb-4" src="title.png" alt="">
+                <h2>Login</h2>
+                <p class="text-white-50 text-uppercase">Prepare To Be Amazed</p>
+              </div>
+            </div>
+            </div>
+        <div style="background-color: var(--dark-color);" class="footer pt-5 pb-5 text-white-50 text-sm-start">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <form action="" method="post">
+                            <!-- <legend style="color: white !important;">Log in</legend> -->
+                            <fieldset>
+                            <table class="text-light">
+                                  
+                                      <td><label for="name">Name :</label></td>
+                                      <td><input type="text" name="name" id="name"  minlength="3" maxlength="30" required></td>
+                                  
+                                  <tr>
+                                      <td><label for="address">Address :</label></td>
+                                      <td><input type="text" name="address" id="address" minlength="5" maxlength="30"  required></td>
+                                  </tr>
+                                  <tr>
+                                      <td><label for="mail">E-mail :</label></td>
+                                      <td><input type="email" name="mail" id="mail" required placeholder="example@mail.com"></td>
+                                  </tr>
+                                   <tr>
+                                      <td><label for="Magazine">Services :</label></td>
+                                      <td>
+                                        <select id="color" name="Magazine" style="width: 200px; height: 35px;">
+                                          <option value="NewsWeek1">Coding</option>
+                                          <option value="NewsWeek2" >Design</option>
+                                          <option value="NewsWeek3"  >Apps</option>
+                                          <option value="NewsWeek4" >Photography</option>
+                                       </select>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td><label for="Subscription">Subscription :</label></td>
+                                      <td>
+                                        <input type="radio" name="Subscription"  required>1 year
+                                        <input type="radio" name="Subscription"  required>2 year
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                 <td> <input style="border: none; padding: 10px; font-size: 20px; font-weight: bold; border-radius: 10px; background-color: var(--yellow-color); color: var(--dark-color);" type="submit" name="submit" id="submit" value="Send Your Order">
+                                 </td>    
+                                 </tr>
+                            </table>
+                        </fieldset>
+                        </form>     
+                                
+                    </div>
+                  </div>
+            </div>
+        </div>
+                <div class="divoverbody"></div>
+                <script src="js/bootstrap.bundle.min.js"></script>
+                <script src="fontawesome-free-6.4.2-web/js/all.min.js"></script>
+                <script src="main - Copy (2).js"></script>
+    </body>
+</html>
